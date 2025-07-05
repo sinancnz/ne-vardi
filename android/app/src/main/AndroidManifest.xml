@@ -1,12 +1,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.askodigital.nevardi">
-    
+
     <application
         android:label="Ne Vardı?"
         android:icon="@mipmap/ic_launcher"
         android:theme="@style/Theme.Material3.DayNight.NoActionBar">
-        
+
+        <!-- Flutter V2 embedding için gerekli -->
+        <meta-data
+            android:name="flutterEmbedding"
+            android:value="2" />
+
         <activity
             android:name="com.askodigital.nevardi.MainActivity"
             android:exported="true"
@@ -15,10 +20,11 @@
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
+
     </application>
+
 </manifest>
